@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Courgette&family=Dancing+Script:wght@500&family=Inclusive+Sans&family=Kaushan+Script&family=Lato&family=Merienda:wght@300;400&family=Merriweather:wght@300&family=Nabla&family=Poppins:wght@200&family=Qwitcher+Grypen:wght@700&family=Raleway:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,400;1,400;1,500&family=Tilt+Prism&display=swap');
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary: 'Poppins',
+        sans-serif;
+    --secondary: 'Raleway'
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.outer-background {
+    height: 100%;
+    width: 100%;
+    background-color: white
+}
+
+.black-outer-background{
+    height: 100%;
+        width: 100%;
+        background:  #232222;
+}
+
+.header-class {
+    background: rgb(8, 8, 38);
+    padding: 20px 10px;
+    color: #fff
+}
+
+.dark-header-class{
+    background-color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    color:black
+}
+
+.icon-class {
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.sub-class {
+    color: red;
+}
+
+/*.category-container {
+    display: flex;
+    gap: 10px
+}
+*/
+.category {
+    font-size: 18px;
+    font-family: var(--secondary);
+    font-weight: bold;
+    cursor: pointer;
+    color:white!important
+
+
+}
+.category-a{
+    padding-top:0px;
+    margin-top:0px;
+    padding-bottom: 0px;
+}
+
+
+
+.category:hover,
+.category:active {
+    border-bottom: orangered solid 2px;
+
+}
+.heading-container {
+    
+    background-image:linear-gradient(270deg, rgb(248, 24, 61), red, rgb(68, 68, 226));
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+}
+
+@media screen and (min-width:768px) {
+    .heading-container {
+        height: 280px
+    }
+}
+
+
+.main-heading {
+    font-size: 13vw;
+    font-family: 'lato';
+    position: relative;
+    top: 10%;
+
+    /*  line-height: 190px; */
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@media screen and (max-width:768px) {
+    .main-heading {
+        font-size: 16vw;
+        margin-top: 5px
+    }
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+
+}
+
+.ul-class {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+    justify-content: space-evenly;
+
+}
+
+.li-class {
+    list-style-type: none;
+    margin: 20px 10px;
+    height: 340px;
+    border: solid 1px black;
+    border-radius: 8px;
+    overflow: hidden;
+background-color: rgb(239, 187, 32);
+
+}
+
+
+.div-class {
+    display: flex;
+    
+    flex-direction: column;
+}
+
+
+.image-class {
+    width: 100%;
+    height: 190px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+@media screen and (min-width:768px) {
+    .image-class {
+        height: 170px
+    }
+
+}
+
+.cardtitle-class {
+    font-size: 16px;
+    font-family: 'Roboto';
+
+    font-weight: bold;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.textContainer-class {
+    padding: 10px;
+}
+
+.para-element-class {
+    font-family: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;
+    max-height: 100px;
+    margin-top: 10px;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.para-element-class-source {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px
+}
+
+.not-found-list {
+    list-style-type: none;
+}
+
+.not-found-img {
+    width: 300px
+}
+
+
+
+.button-class {
+    font-family: 'Raleway'!important;
+    font-weight: 700 !important
+}
+
+.button-hide-class {
+    display: none;
+
+}
+
+
+
+.button-Hamberger,
+.button-Hamberger:focus,
+.button-Hamberger:active,
+.button-Hamberger-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.text-white-class{
+    color:white !important
+}
+
+.text-black-class{
+    color:black !important
+}
+
+
